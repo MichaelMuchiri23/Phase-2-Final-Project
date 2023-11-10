@@ -6,6 +6,7 @@ function Navbar(){
         <nav>
             <NavLink exact to="/">Search Engine</NavLink>
             <NavLink to="/about">About</NavLink>
+            <NavLink to="/documentation">Documentation</NavLink>
         </nav>
     )
 }
