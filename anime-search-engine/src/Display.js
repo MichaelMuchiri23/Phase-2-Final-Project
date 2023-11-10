@@ -2,7 +2,7 @@ import React from "react";
 
 function Display({result}){
    return(
-    <div>
+    <div id="display-div">
         <video src={result.video} controls id="video-result" width="400" height="240" >
             <source src={result.video} type="video/mp4" />
         </video>

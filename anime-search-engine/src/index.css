@@ -1,0 +1,62 @@
+body {
+    background-image: url(https://images6.alphacoders.com/133/1330235.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    border-radius: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+#main-header {
+    text-align: center;
+    font-style:italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(13, 107, 10);
+    font-weight: bolder;
+}
+
+#url-form {
+    padding: 5%;
+    text-align: center;
+}
+
+.btn {
+    background-color: rgb(11, 228, 228);
+}
+
+.field:focus {
+    border: 3px solid #555;
+}
+
+#display-div {
+    text-align: center;
+}
+
+.details {
+    color: rgb(177, 226, 41);
+    font-family: fantasy;
+    font-size: larger;
+
+}
+
+#about {
+    text-align: center;
+    font-size: larger;
+    color: rgb(39, 255, 39);
+}
+
+#documentation {
+    text-align: center;
+    font-size: larger;
+    color: rgb(0, 248, 0);
+}
+
+a {
+    color: aquamarine;
+}
+

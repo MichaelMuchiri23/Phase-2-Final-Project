@@ -22,7 +22,7 @@ function Search(){
     return(
         <>
          <form id="url-form" onSubmit={handleSubmit}>
-            <label className="label">Input URL in the Searchbar</label>
+            <label className="label">Input URL</label>
             <input value={content} type="url" placeholder="Input URL here" className="field"
                    onChange={(e) => setContent(e.target.value)} onPaste={handlePaste}
             />
