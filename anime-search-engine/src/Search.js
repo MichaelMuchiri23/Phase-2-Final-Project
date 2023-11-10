@@ -10,15 +10,21 @@ function Search(){
       e.preventDefault()
       fetch(`https://api.trace.moe/search?url=${content}`)
       .then(res => res.json())
-      .then(data => console.log(data))
+      .then(data => setResult(data.result[0]))
       
+    }
+    //onPaste handler function
+    function handlePaste(e){
+      const pastedValue = e.clipboardData.getData("text")
+      const newValue = content + pastedValue
+      setContent(newValue)
     }
     return(
         <>
          <form id="url-form" onSubmit={handleSubmit}>
             <label className="label">Input URL in the Searchbar</label>
-            <input value={content} type="text" placeholder="Input URL here" className="field"
-                   onChange={(e) => setContent(e.target.value)}
+            <input value={content} type="url" placeholder="Input URL here" className="field"
+                   onChange={(e) => setContent(e.target.value)} onPaste={handlePaste}
             />
             <button className="btn">Search</button>
          </form>

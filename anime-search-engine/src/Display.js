@@ -3,12 +3,12 @@ import React from "react";
 function Display({result}){
    return(
     <div>
-        <video id="video-result" width="320" height="240" autoPlay>
-            <source src={result} type="video/mp4" />
+        <video src={result.video} controls id="video-result" width="400" height="240" >
+            <source src={result.video} type="video/mp4" />
         </video>
         <ul className="details">
-            <li>{result}</li>
-            <li>{result}</li>
+            <li>{result.filename}</li>
+            <li>{result.episode}</li>
         </ul>
     </div>
    )
